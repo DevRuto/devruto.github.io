@@ -2,7 +2,7 @@
   <div class="bg-gray-600 w-full font-mono">
     <div class="container flex flex-col sm:flex-row justify-between h-16 mx-auto">
       <div class="bg-gray-600 flex items-center justify-between h-full z-50 px-4 pt-4 sm:pt-0">
-        <div class="text-white font-medium text-3xl">Winston</div>
+        <div class="text-white font-medium text-3xl">Winston<div class="text-xs inline"> aka</div><div class="text-sm inline"> Ruto</div></div>
         <button class="sm:hidden w-8 h-8 text-white focus:outline-none" @click="collapse = !collapse">
           <svg v-show="collapse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
@@ -13,7 +13,7 @@
         </button>
       </div>
       <div
-        :class="{ '-translate-y-48 sm:translate-y-0': collapse }"
+        :class="{ '-translate-y-60 sm:translate-y-0': collapse }"
         class="flex flex-col items-center sm:flex-row space-y-3 sm:space-y-0 sm:space-x-6 text-white px-4 transform transition-all ease-in-out duration-200 bg-gray-600 py-6 sm:py-4 z-40">
         <a class="text-lg transition-colors hover:text-purple-200 focus:text-purple-400" href="#AboutMe" @click="collapse = true">About Me</a>
         <a class="text-lg transition-colors hover:text-purple-200 focus:text-purple-400" href="#Projects" @click="collapse = true">Projects</a>
