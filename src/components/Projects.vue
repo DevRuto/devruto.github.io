@@ -1,7 +1,9 @@
 <template>
   <div>
-    <div v-if="selectedProject" class="fixed h-full w-full mx-auto z-10 inset-0 pt-20 px-4">
-      modal
+    <div v-if="selectedProject" class="fixed h-full w-full md:h-2/3 md:w-2/3 md:mx-auto md:my-auto z-10 inset-0 pt-20 px-4 pb-4">
+      <div class="bg-blue-400 rounded h-full w-full mx-auto my-auto p-4">
+        modal
+      </div>
     </div>
     <div class="text-4xl font-mono">
       <a class="inline-block" href="#Projects">
