@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="text-black dark:text-white">
     <Navbar />
-    <div class="container flex flex-col space-y-12 mx-auto pt-6 p-4">
+    <div class="container flex flex-col space-y-12 mx-auto pt-6 p-4 z-0">
       <AboutMe id="AboutMe" />
       <Projects id="Projects" />
       <Contact id="Contact" />

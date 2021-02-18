@@ -14,7 +14,8 @@
       </div>
       <div
         :class="{ '-translate-y-48 sm:translate-y-0': collapse }"
-        class="flex flex-col items-center sm:flex-row space-y-3 sm:space-y-0 sm:space-x-6 text-white px-4 transform transition-all ease-in-out duration-200 bg-gray-600 py-6 sm:py-4">
+        class="flex flex-col items-center sm:flex-row space-y-3 sm:space-y-0 sm:space-x-6 text-white px-4 transform transition-all ease-in-out duration-200 bg-gray-600 py-6 sm:py-4 z-40">
+        <ThemeSwitch />
         <a class="text-lg transition-colors hover:text-purple-200 focus:text-purple-400" href="#AboutMe" @click="collapse = true">About Me</a>
         <a class="text-lg transition-colors hover:text-purple-200 focus:text-purple-400" href="#Projects" @click="collapse = true">Projects</a>
         <a class="text-lg transition-colors hover:text-purple-200 focus:text-purple-400" href="#Contact" @click="collapse = true">Contact</a>
@@ -27,7 +28,12 @@
 </template>
 
 <script>
+import ThemeSwitch from './ThemeSwitch.vue';
+
 export default {
+  components: {
+    ThemeSwitch,
+  },
   data() {
     return {
       collapse: true,
