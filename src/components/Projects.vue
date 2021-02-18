@@ -27,7 +27,7 @@
       </a>
       Projects
     </div>
-    <div class="flex flex-col">
+    <div class="flex flex-col pt-4">
       <div
         class="border-2 rounded-lg border-gray-200 h-40 w-60 p-2 overflow-hidden cursor-pointer hover:bg-gray-700"
         v-for="project of projects"
