@@ -97,6 +97,11 @@ export default {
               desc: '.NET Framework',
             },
             {
+              name: 'Discord.Net',
+              link: 'https://github.com/discord-net/Discord.Net',
+              desc: '.NET API Wrapper for Discord',
+            },
+            {
               name: 'NLog',
               link: 'https://nlog-project.org/',
               desc: 'Logging Framework for .NET',
