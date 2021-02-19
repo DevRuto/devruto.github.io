@@ -1,10 +1,10 @@
 <template>
   <div>
     <div
-      class="fixed h-full w-full md:h-2/3 md:w-2/3 md:mx-auto md:my-auto z-10 inset-0 pt-20 px-4 pb-4 transition transform duration-200 scale-0"
+      class="fixed h-2/3 md:h-1/2 w-full md:w-3/5 md:mx-auto my-auto overflow-hidden z-10 inset-0 pt-20 px-4 pb-4 transition transform duration-200 scale-0"
       :class="{ 'scale-100': selectedProject }"
       >
-      <div class="bg-gray-900 shadow-lg rounded h-full w-full mx-auto my-auto p-4">
+      <div class="relative bg-gray-100 dark:bg-gray-900 shadow-lg border-2 border-gray-700 overflow-y-auto rounded-lg h-full w-full mx-auto my-auto p-4">
         <div v-if="selectedProject" class="flex flex-col">
           <div class="flex flex-row justify-between items-center">
             <div class="text-3xl font-bold">{{ selectedProject.name }}</div>
@@ -14,9 +14,25 @@
               </svg>
             </button>
           </div>
-          <a class="text-blue-200" target="_blank" :href="selectedProject.link">{{ selectedProject.link }}</a>
-          <div>
-            content
+          <a class="text-blue-500 hover:underline" target="_blank" :href="selectedProject.link">{{ selectedProject.link }}</a>
+          <div class="flex flex-col sm:flex-row pt-4 justify-center sm:justify-start space-y-4 sm:space-y-0 space-x-0 sm:space-x-4">
+            <div class="flex flex-col border border-gray-700 rounded-lg p-4">
+              <div class="font-semibold mx-auto">Description</div>
+              <hr class="border-gray-600 pb-4" />
+              <div class="">
+                {{ selectedProject.shortDesc }}
+              </div>
+            </div>
+            <div class="flex flex-col border border-gray-700 rounded-lg p-4">
+              <div class="font-semibold mx-auto">Technologies</div>
+              <hr class="border-gray-600 pb-4" />
+              <div class="flex flex-col space-y-3">
+                <div v-for="tool of selectedProject.tools" :key="tool.name">
+                  <a class="text-blue-500 hover:underline" :href="tool.link" target="_blank">{{ tool.name }}</a>
+                  - {{ tool.desc }}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -27,13 +43,14 @@
       </a>
       Projects
     </div>
-    <div class="flex flex-col pt-4">
+    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 space-x-0 sm:space-x-4 pt-4">
       <div
-        class="border-2 rounded-lg border-gray-200 h-40 w-60 p-2 overflow-hidden cursor-pointer hover:bg-gray-700"
+        class="relative bg-gray-200 dark:bg-gray-700 border-2 rounded-lg border-gray-500 h-40 w-60 p-2 overflow-hidden cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600"
         v-for="project of projects"
         @click="selectProject(project)"
         :key="project.name">
-        <div class="text-xl font-bold">{{ project.name }}</div>
+        <div class="text-xl font-bold text-gray-800 dark:text-gray-200">{{ project.name }}</div>
+        <div class="text-sm text-gray-800 dark:text-gray-200">{{ project.shortDesc }}</div>
       </div>
     </div>
   </div>
@@ -48,6 +65,7 @@ export default {
         {
           name: 'globalapi-portal',
           link: 'https://bitbucket.org/kztimerglobalteam/globalapi-portal',
+          language: 'javascript',
           shortDesc: 'Administrative Portal Front-end',
           tools: [
             {
@@ -64,6 +82,24 @@ export default {
               name: 'Vuetify',
               link: 'https://vuetifyjs.com/',
               desc: 'Material Design Framework',
+            },
+          ],
+        },
+        {
+          name: 'Pixel Discord Bot',
+          link: 'https://gitlab.com/Ruto/pixel-discord-bot',
+          language: 'C#',
+          shortDesc: 'Discord Bot to announce live Twitch Streamers',
+          tools: [
+            {
+              name: '.NET 5',
+              link: 'https://docs.microsoft.com/en-us/dotnet/core/dotnet-five',
+              desc: '.NET Framework',
+            },
+            {
+              name: 'NLog',
+              link: 'https://nlog-project.org/',
+              desc: 'Logging Framework for .NET',
             },
           ],
         },
