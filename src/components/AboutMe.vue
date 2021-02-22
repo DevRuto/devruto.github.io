@@ -21,7 +21,7 @@
         in plain HTML/CSS/JS. Now, I mainly use VueJS for all my web applications.
       </p>
       <p>
-        Currently, I am spending my time learning about Cloud technologies, namely AWS.
+        Currently, I am spending my time learning about Cloud technologies, AWS in particular.
       </p>
     </div>
   </div>
