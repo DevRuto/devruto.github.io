@@ -6,8 +6,25 @@
       </a>
       Contact
     </div>
-    <div class="flex pt-4">
-      Content
+    <div class="flex flex-col space-y-4 pt-4">
+      <div>
+        <label for="email">Email: </label>
+        <a class="text-blue-400 hover:underline" name="email" target="_blank" href="mailto:&#100;&#101;&#118;&#114;&#117;&#116;&#111;&#064;&#112;&#114;&#111;&#116;&#111;&#110;&#109;&#097;&#105;&#108;&#046;&#099;&#104;">
+          &#100;&#101;&#118;&#114;&#117;&#116;&#111;&#064;&#112;&#114;&#111;&#116;&#111;&#110;&#109;&#097;&#105;&#108;&#046;&#099;&#104;
+          <svg class="inline" xmlns="http://www.w3.org/2000/svg" width="16" height="16S" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          </svg>
+        </a>
+      </div>
+      <div>
+        <label for="linkedin">LinkedIn: </label>
+        <a class="text-blue-400 hover:underline" href="https://www.linkedin.com/in/winstonkanghua/" target="_blank">
+          winstonkanghua
+          <svg class="inline" xmlns="http://www.w3.org/2000/svg" width="16" height="16S" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
 </template>
