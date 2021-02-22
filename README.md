@@ -1,5 +1,7 @@
 # Portfolio
 
+[![GitHub Pages](https://github.com/DevRuto/devruto.github.io/actions/workflows/pages.yml/badge.svg)](https://github.com/DevRuto/devruto.github.io/actions/workflows/pages.yml)
+
 ## Project setup
 ```
 yarn install
