@@ -6,8 +6,23 @@
       </a>
       About Me
     </div>
-    <div class="flex pt-4">
-      Content
+    <div class="flex flex-col space-y-4 pt-4">
+      <p>
+        Hey! My name is Winston. I'm a recent graduate from Rochester Institute of Techology,
+        with a Bachelor in Web and Mobile Computing!
+      </p>
+      <p>
+        I enjoy learning new technologies. I started programming in C# when I was in high school,
+        developing console and WinForms/WPF applications, and now I primarily develop WebAPIs in C#.
+      </p>
+      <p>
+        Additionally, I've developed several websites using SPA frameworks, React, and VueJS.
+        React was the first framework I learned, and it was really fun to work with, a lot better than writing a website
+        in plain HTML/CSS/JS. Now, I mainly use VueJS for all my web applications.
+      </p>
+      <p>
+        Currently, I am spending my time learning about Cloud technologies, namely AWS.
+      </p>
     </div>
   </div>
 </template>
