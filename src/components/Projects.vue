@@ -42,11 +42,11 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20"><path fill="currentColor" fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg>
       </a>
       Projects
-      <div class="text-xs inline">(select project for details)</div>
+      <div class="text-xs sm:inline">(select project for details)</div>
     </div>
-    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 space-x-0 sm:space-x-4 pt-4">
+    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 space-x-0 sm:space-x-4 pt-4 items-center">
       <div
-        class="relative bg-gray-200 dark:bg-gray-600 border-2 rounded-lg border-gray-700 h-40 w-60 p-2 overflow-hidden cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600"
+        class="relative bg-gray-200 dark:bg-gray-600 border-2 rounded-lg border-gray-700 h-40 w-80 p-2 overflow-hidden cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-700"
         v-for="project of projects"
         @click="selectProject(project)"
         :key="project.name">
