@@ -188,6 +188,26 @@ export default {
             },
           ],
         },
+        {
+          name: 'Steam Workshop Downloader',
+          link: 'https://gitlab.com/Ruto/workshopdownloader',
+          language: 'TypeScript',
+          logo: ICON_GITLAB,
+          shortDesc: 'Downloader for Steam Workshop artifacts',
+          longDesc: '',
+          tools: [
+            {
+              name: 'Vue.js',
+              link: 'https://vuejs.org/',
+              desc: 'JavaScript Framework',
+            },
+            {
+              name: 'TypeScript',
+              link: 'https://www.typescriptlang.org/',
+              desc: 'Typed language on top of JavaScript',
+            },
+          ],
+        },
       ],
     };
   },
