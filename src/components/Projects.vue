@@ -35,7 +35,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex flex-col border border-gray-700 rounded-lg p-4 w-full sm:w-2/3">
+            <div v-if="selectedProject.longDesc" class="flex flex-col border border-gray-700 rounded-lg p-4 w-full sm:w-2/3">
               <div class="font-semibold mx-auto">Summary</div>
               <hr class="border-gray-600 pb-4" />
               <div class="flex flex-col space-y-3">
@@ -93,7 +93,7 @@ export default {
           docker: true,
           logo: ICON_BITBUCKET,
           shortDesc: 'Administrative Portal Front-end',
-          longDesc: 'Live site located at <a class="text-blue-500 hover:underline" target="_blank" href="https://portal.global-api.com/dashboard">https://portal.global-api.com/dashboard</a>',
+          longDesc: 'Live site: <a class="text-blue-500 hover:underline" target="_blank" href="https://portal.global-api.com/dashboard">GlobalAPI Portal</a>',
           tools: [
             {
               name: 'Vue.js',
@@ -154,7 +154,7 @@ export default {
           language: 'TypeScript',
           logo: ICON_GITLAB,
           shortDesc: 'Downloader for Steam Workshop artifacts',
-          longDesc: 'Live site located at <a class="text-blue-500 hover:underline" target="_blank" href="https://ruto.gitlab.io/workshopdownloader/">https://ruto.gitlab.io/workshopdownloader/</a>',
+          longDesc: 'Live site: <a class="text-blue-500 hover:underline" target="_blank" href="https://ruto.gitlab.io/workshopdownloader/">Steam Workshop Downloader</a>',
           tools: [
             {
               name: 'Vue.js',
