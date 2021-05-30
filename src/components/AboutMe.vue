@@ -17,8 +17,8 @@
       </p>
       <p>
         Additionally, I've developed several websites using SPA frameworks, React, and VueJS.
-        React was the first framework I learned, and it was really fun to work with, a lot better than writing a website
-        in plain HTML/CSS/JS. Now, I mainly use VueJS for all my web applications.
+        React was the first framework I learned, and it was facinating to work with, developing
+        a website with a component based design, rather than the traditional MVC design.
       </p>
       <p>
         Currently, I am spending my time learning about Cloud technologies, AWS in particular.
